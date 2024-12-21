@@ -60,8 +60,20 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-        <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+<div 
+  class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" 
+  data-aos="zoom-out">
+  
+  <!-- Pré-carregue a imagem para priorizar o carregamento -->
+  <link rel="preload" href="assets/img/hero-img.svg" as="image" type="image/svg">
+  <img 
+    src="assets/img/hero-img.svg" 
+    class="img-fluid animated" 
+    alt="Hero Image" 
+    loading="lazy" 
+
+</div>
+
         <h1>Tráfego Pago<span> Inteligente</span></h1>
         <p>Multiplique suas vendas e alcance o público certo com campanhas digitais inteligentes. <br> Clique aqui e fale com nossa especialista!</p>
         <div class="d-flex">
