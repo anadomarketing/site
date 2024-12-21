@@ -43,7 +43,6 @@
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -77,13 +76,12 @@
   class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" 
   data-aos="zoom-out">
   
-  <!-- Pré-carregue a imagem para priorizar o carregamento -->
-  <link rel="preload" href="assets/img/hero-img.svg" as="image" type="image/svg">
-  <img 
-    src="assets/img/hero-img.svg" 
-    class="img-fluid animated" 
-    alt="Hero Image" 
-    loading="lazy" 
+ <img 
+  src="assets/img/hero-img-768px.webp" 
+  srcset="assets/img/hero-img-480px.webp 480w, assets/img/hero-img-768px.webp 768w, assets/img/hero-img-1200px.webp 1200w" 
+  sizes="(max-width: 768px) 480px, (max-width: 1200px) 768px, 1200px" 
+  class="img-fluid" 
+  alt="Hero Image">
 
 </div>
 
