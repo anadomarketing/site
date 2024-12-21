@@ -8,28 +8,26 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-	<link rel="preload" href="assets/img/hero-img.svg" as="image">
-
-	
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-
   <!-- Fonts -->
-<style>
+  
+  <style>
   body { margin: 0; font-family: 'Roboto', sans-serif; }
   .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
   /* Mais estilos críticos aqui */
 </style>
-	
+
+
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <script src="/js/bootstrap.min.js" defer></script>
 
-	
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -43,6 +41,7 @@
 </head>
 
 <body class="index-page">
+
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -75,16 +74,14 @@
 <div 
   class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" 
   data-aos="zoom-out">
-
-	<img src="assets/img/hero-img.svg" class="img-fluid fade-in" alt="Hero Image">
-
- <img 
-	 
-  src="assets/img/hero-img-768px.webp" 
-  srcset="assets/img/hero-img-480px.webp 480w, assets/img/hero-img-768px.webp 768w, assets/img/hero-img-1200px.webp 1200w" 
-  sizes="(max-width: 768px) 480px, (max-width: 1200px) 768px, 1200px" 
-  class="img-fluid" 
-  alt="Hero Image">
+  
+  <!-- Pré-carregue a imagem para priorizar o carregamento -->
+  <link rel="preload" href="assets/img/hero-img.svg" as="image" type="image/svg">
+  <img 
+    src="assets/img/hero-img.svg" 
+    class="img-fluid animated" 
+    alt="Hero Image" 
+    loading="lazy" 
 
 </div>
 
