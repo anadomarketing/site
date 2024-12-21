@@ -221,6 +221,9 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
+
+
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -880,7 +883,7 @@ section,
 # Featured servicos Section
 --------------------------------------------------------------*/
 .featured-servicos .service-item {
-  padding: 50px 30px;
+  padding: 30px 30px;
   transition: all ease-in-out 0.4s;
   height: 100%;
 }
