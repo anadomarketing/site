@@ -87,6 +87,13 @@ h6 {
   font-family: var(--heading-font);
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.woff2') format('woff2');
+  font-display: swap;  /* Exibe a fonte substituta até a fonte principal carregar */
+}
+
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
