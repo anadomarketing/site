@@ -13,8 +13,8 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Source Sans Pro",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --heading-font: "Roboto",  sans-serif;
+  --nav-font: "Roboto",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -56,6 +56,29 @@
 :root {
   scroll-behavior: smooth;
 }
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+         url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+         url('/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Exemplo de uso da fonte */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
